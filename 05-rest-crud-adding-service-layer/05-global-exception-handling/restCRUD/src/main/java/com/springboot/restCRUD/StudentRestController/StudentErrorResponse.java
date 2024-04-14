@@ -1,17 +1,18 @@
-package com.springboot.restCRUD.StudentRestController.exception;
+package com.springboot.restCRUD.StudentRestController;
 
 public class StudentErrorResponse {
-    private  int status;
+    private int status;
     private String message;
     private long timeStamp;
+
+    public StudentErrorResponse() {
+
+    }
 
     public StudentErrorResponse(int status, String message, long timeStamp) {
         this.status = status;
         this.message = message;
         this.timeStamp = timeStamp;
-    }
-
-    public StudentErrorResponse() {
     }
 
     public int getStatus() {
@@ -38,3 +39,4 @@ public class StudentErrorResponse {
         this.timeStamp = timeStamp;
     }
 }
+

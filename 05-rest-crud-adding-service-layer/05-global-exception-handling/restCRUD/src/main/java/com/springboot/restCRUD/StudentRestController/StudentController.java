@@ -32,6 +32,12 @@ public class StudentController {
 
     @GetMapping("/student/{studentId}")
     public Student getStudentByIndexOfList(@PathVariable int studentId){
+        if ( (studentId >= list.size()) || (studentId < 0)) {
+            throw new StudentNotFoundException("Student id not found - " + studentId);
+        }
+
+        return theStudents.get(studentId);
+
         return list.get(studentId);
     }
 

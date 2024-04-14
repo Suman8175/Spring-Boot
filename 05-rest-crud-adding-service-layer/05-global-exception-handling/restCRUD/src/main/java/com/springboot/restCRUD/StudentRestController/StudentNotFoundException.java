@@ -1,4 +1,4 @@
-package com.springboot.restCRUD.StudentRestController.exception;
+package com.springboot.restCRUD.StudentRestController;
 
 public class StudentNotFoundException extends RuntimeException{
 
@@ -14,3 +14,4 @@ public class StudentNotFoundException extends RuntimeException{
         super(cause);
     }
 }
+
